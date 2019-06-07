@@ -9,6 +9,7 @@ from django.db import models
 class reg(models.Model):
     firstname = models.CharField(max_length=250,null=True, help_text='Required')
     lastname = models.CharField(max_length=250, null=True , help_text='Required')
+    Fname = models.CharField(max_length=250, null=True , help_text='Required')
     username = models.CharField(max_length=250, null=True , help_text='Required')
     email = models.EmailField(max_length=250, null=True , help_text='Required')
     contact_no = models.IntegerField(null=True)
